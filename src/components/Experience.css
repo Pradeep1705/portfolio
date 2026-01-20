@@ -1,0 +1,419 @@
+.experience {
+  background: linear-gradient(135deg, #141414 0%, #0d0d0d 50%, #1a1a1a 100%);
+  position: relative;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 80% 20%, rgba(229, 9, 20, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(255, 215, 0, 0.05) 0%, transparent 50%);
+}
+
+.experience .container {
+  position: relative;
+  z-index: 2;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.subsection-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, var(--netflix-red), var(--netflix-gold));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  position: relative;
+}
+
+.subsection-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--netflix-red), var(--netflix-gold));
+  border-radius: 2px;
+}
+
+/* Work Experience Styles */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.experience-card {
+  background: linear-gradient(145deg, rgba(26, 26, 26, 0.9), rgba(15, 15, 15, 0.9));
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.experience-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--netflix-red), var(--netflix-gold));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover::before {
+  transform: scaleX(1);
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.job-info {
+  flex: 1;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  color: var(--netflix-red);
+  font-weight: 500;
+}
+
+.job-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.5rem;
+}
+
+.duration {
+  font-size: 0.9rem;
+  color: var(--netflix-gold);
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.job-type {
+  font-size: 0.8rem;
+  color: var(--netflix-light-gray);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.job-description {
+  color: var(--netflix-light-gray);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+}
+
+.responsibilities,
+.job-achievements {
+  margin-bottom: 1.5rem;
+}
+
+.responsibilities h6,
+.job-achievements h6,
+.job-technologies h6 {
+  font-size: 1rem;
+  color: white;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.responsibilities ul,
+.job-achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.responsibilities li,
+.job-achievements li {
+  color: var(--netflix-light-gray);
+  font-size: 0.9rem;
+  margin-bottom: 0.3rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.responsibilities li::before,
+.job-achievements li::before {
+  content: '▶';
+  position: absolute;
+  left: 0;
+  color: var(--netflix-red);
+  font-size: 0.7rem;
+}
+
+.job-technologies {
+  margin-bottom: 1.5rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background: rgba(229, 9, 20, 0.1);
+  color: var(--netflix-red);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid rgba(229, 9, 20, 0.2);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(229, 9, 20, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Achievements Styles */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.achievement-card {
+  background: linear-gradient(145deg, rgba(26, 26, 26, 0.8), rgba(15, 15, 15, 0.8));
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  display: flex;
+  gap: 1rem;
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-color: rgba(229, 9, 20, 0.3);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(229, 9, 20, 0.1);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.achievement-description {
+  color: var(--netflix-light-gray);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.achievement-meta {
+  display: flex;
+  gap: 1rem;
+}
+
+.achievement-date {
+  font-size: 0.8rem;
+  color: var(--netflix-gold);
+  font-weight: 600;
+}
+
+.achievement-category {
+  font-size: 0.8rem;
+  color: var(--netflix-light-gray);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+/* Certifications Styles */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.certification-card {
+  background: linear-gradient(145deg, rgba(26, 26, 26, 0.8), rgba(15, 15, 15, 0.8));
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.cert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.cert-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  flex: 1;
+}
+
+.cert-date {
+  font-size: 0.8rem;
+  color: var(--netflix-gold);
+  font-weight: 600;
+  background: rgba(255, 215, 0, 0.1);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cert-issuer {
+  font-size: 1rem;
+  color: var(--netflix-red);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.cert-description {
+  color: var(--netflix-light-gray);
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .experience-content {
+    gap: 3rem;
+  }
+  
+  .experience-card {
+    padding: 1.5rem;
+  }
+  
+  .experience-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .job-meta {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .achievements-grid,
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .achievement-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .achievement-icon {
+    align-self: center;
+  }
+  
+  .cert-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .subsection-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-card,
+  .achievement-card,
+  .certification-card {
+    padding: 1rem;
+  }
+  
+  .job-title {
+    font-size: 1.2rem;
+  }
+  
+  .company-name {
+    font-size: 1rem;
+  }
+  
+  .achievement-title,
+  .cert-name {
+    font-size: 1.1rem;
+  }
+  
+  .tech-tags {
+    gap: 0.3rem;
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 3px 8px;
+  }
+}
