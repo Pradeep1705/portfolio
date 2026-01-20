@@ -22,9 +22,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
+  background:
     linear-gradient(45deg, transparent 30%, rgba(229, 9, 20, 0.02) 70%),
-    url('data:image/svg+xml,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.01"><rect width="1" height="1"/></g></svg>');
+    url('data:image/svg+xml;utf8,<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%23ffffff" fill-opacity="0.01"><rect width="1" height="1"/></g></g></svg>');
 }
 
 .footer .container {

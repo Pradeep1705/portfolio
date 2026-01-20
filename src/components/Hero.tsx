@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
     }, 100);
 
     return () => clearInterval(typeWriter);
-  }, [currentIndex]);
+  }, [currentIndex, roles]);
 
   const scrollToProjects = () => {
     const element = document.getElementById('projects');
