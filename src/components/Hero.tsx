@@ -1,10 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import './Hero.css';
 
 const Hero: React.FC = () => {
   const [displayText, setDisplayText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
-  const roles = ['Full Stack Developer', 'Data Science Student', 'Machine Learning Enthusiast', 'Problem Solver'];
+  const roles = useMemo(() => ['Full Stack Developer', 'Data Science Student', 'Machine Learning Enthusiast', 'Problem Solver'], []);
 
   useEffect(() => {
     const currentRole = roles[currentIndex];
