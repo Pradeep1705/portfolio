@@ -6,7 +6,7 @@ interface EducationItem {
   degree: string;
   institution: string;
   duration: string;
-  cgpa?: string;
+
   percentage?: string;
   status: string;
   description: string;
@@ -20,7 +20,7 @@ const Education: React.FC = () => {
       degree: "B.S. in Data Science and Applications",
       institution: "Indian Institute of Technology, Madras",
       duration: "2021-2025",
-      cgpa: "7.37/10",
+
       status: "Completed",
       description: "Currently pursuing a comprehensive degree program focusing on data science, machine learning, and statistical analysis with practical applications.",
       highlights: [
@@ -35,7 +35,7 @@ const Education: React.FC = () => {
       degree: "Bachelor of Commerce",
       institution: "Ramakrishna Mission Vivekananda College",
       duration: "2018-2021",
-      cgpa: "7.0/10",
+
       status: "Completed",
       description: "Completed undergraduate degree in Commerce with focus on business fundamentals, accounting, and analytical thinking.",
       highlights: [
@@ -90,12 +90,7 @@ const Education: React.FC = () => {
                   </div>
                   
                   <div className="performance-metrics">
-                    {item.cgpa && (
-                      <div className="metric">
-                        <span className="metric-label">CGPA:</span>
-                        <span className="metric-value">{item.cgpa}</span>
-                      </div>
-                    )}
+
                     {item.percentage && (
                       <div className="metric">
                         <span className="metric-label">Percentage:</span>
@@ -142,13 +137,7 @@ const Education: React.FC = () => {
             </div>
           </div>
           
-          <div className="stat-card">
-            <div className="stat-icon">🏆</div>
-            <div className="stat-info">
-              <span className="stat-number">7.37</span>
-              <span className="stat-label">Current CGPA</span>
-            </div>
-          </div>
+
           
           <div className="stat-card">
             <div className="stat-icon">🎯</div>

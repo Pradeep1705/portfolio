@@ -37,7 +37,7 @@ const Experience: React.FC = () => {
       title: "Full-Stack Developer",
       company: "IIT Madras",
       duration: "Present",
-      type: "Academic Project",
+      type: "Full Time",
       description: "Currently working on full-stack development projects as part of academic curriculum, focusing on modern web technologies and best practices.",
       responsibilities: [
         "Developing responsive web applications using React and Vue.js",
@@ -88,8 +88,8 @@ const Experience: React.FC = () => {
     {
       id: 2,
       title: "High Academic Performance",
-      description: "Maintained consistent academic excellence with a CGPA of 7.37/10 in the first 12 terms of Data Science program.",
-      date: "2021-2024",
+      description: "Maintained consistent academic excellence in the first 12 terms of Data Science program.",
+      date: "2021-2025",
       category: "Academic",
       icon: "📚"
     },
@@ -97,7 +97,7 @@ const Experience: React.FC = () => {
       id: 3,
       title: "Project Excellence",
       description: "Successfully completed multiple complex projects including ML models with 95% accuracy and full-stack web applications.",
-      date: "2023-2024",
+      date: "2021-2025",
       category: "Project",
       icon: "💻"
     }

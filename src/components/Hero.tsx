@@ -68,10 +68,7 @@ const Hero: React.FC = () => {
                 <span className="stat-number">3+</span>
                 <span className="stat-label">Projects</span>
               </div>
-              <div className="stat-item">
-                <span className="stat-number">7.37</span>
-                <span className="stat-label">CGPA</span>
-              </div>
+
               <div className="stat-item">
                 <span className="stat-number">5+</span>
                 <span className="stat-label">Technologies</span>

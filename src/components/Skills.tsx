@@ -19,7 +19,7 @@ const Skills: React.FC = () => {
     { name: 'HTML/CSS', level: 85, category: 'languages', icon: '🎨' },
     
     // Frameworks
-    { name: 'React.js', level: 75, category: 'frameworks', icon: '⚛️' },
+    { name: 'React.js', level: 60, category: 'frameworks', icon: '⚛️' },
     { name: 'Vue.js', level: 80, category: 'frameworks', icon: '💚' },
     { name: 'Flask', level: 85, category: 'frameworks', icon: '🌶️' },
     { name: 'Django', level: 70, category: 'frameworks', icon: '🎯' },

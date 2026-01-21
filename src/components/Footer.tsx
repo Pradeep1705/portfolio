@@ -20,11 +20,7 @@ const Footer: React.FC = () => {
       url: 'https://github.com/pradeepan',
       icon: '🐙'
     },
-    {
-      name: 'Phone',
-      url: 'tel:+916382922406',
-      icon: '📱'
-    }
+
   ];
 
   const quickLinks = [
@@ -43,7 +39,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <div className="footer-background">
         <div className="footer-overlay"></div>
       </div>
@@ -86,12 +82,7 @@ const Footer: React.FC = () => {
                   pradeepanravi01@gmail.com
                 </a>
               </div>
-              <div className="contact-item">
-                <span className="contact-icon">📱</span>
-                <a href="tel:+916382922406" className="contact-link">
-                  +91 63829 22406
-                </a>
-              </div>
+
               <div className="contact-item">
                 <span className="contact-icon">💼</span>
                 <a href="https://linkedin.com/in/pradeepan" className="contact-link" target="_blank" rel="noopener noreferrer">
@@ -127,9 +118,7 @@ const Footer: React.FC = () => {
             <p className="copyright">
               © {currentYear} Pradeepan R. All rights reserved.
             </p>
-            <p className="footer-note">
-              Built with ❤️ using React & TypeScript
-            </p>
+            
           </div>
         </div>
       </div>

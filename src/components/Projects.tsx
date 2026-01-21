@@ -6,7 +6,6 @@ interface Project {
   title: string;
   description: string;
   technologies: string[];
-  date: string;
   githubLink?: string;
   features: string[];
   category: string;
@@ -21,8 +20,7 @@ const Projects: React.FC = () => {
       title: "Tracking Student Progress in Projects",
       description: "A comprehensive web application for instructors to manage and monitor student projects throughout the semester. The system allows projects to be broken into milestones for cleaner progress tracking and deadlines. It will integrate with GitHub or similar version control systems to pull and visualize commit histories.",
       technologies: ["Vue.js", "Flask", "SQLite", "Redis", "GitHub SDK", "GenAI"],
-      date: "December 2024",
-      githubLink: "#",
+      githubLink: "https://github.com/Pradeep1705/Project_Tracker",
       features: [
         "Project milestone tracking",
         "GitHub integration for commit visualization",
@@ -37,8 +35,7 @@ const Projects: React.FC = () => {
       title: "Crime Cast",
       description: "Analyze this dataset to predict crime categories. Developed ML models capable of accurately predicting the crime categories with an accuracy of 95% based on this information.",
       technologies: ["Python", "Machine Learning", "Data Analysis"],
-      date: "August 2024",
-      githubLink: "#",
+      githubLink: "https://github.com/Pradeep1705/Crime_Cast",
       features: [
         "Crime category prediction",
         "95% accuracy ML model",
@@ -53,8 +50,7 @@ const Projects: React.FC = () => {
       title: "Tickets Zippy",
       description: "This software handles the entire booking data of the Movie Tickets. It is fully based on the concept of reserving movie tickets for various theatre and user, admin logins.",
       technologies: ["HTML/CSS", "Vue.js", "Flask", "SQLite", "Redis"],
-      date: "August 2023",
-      githubLink: "#",
+      githubLink: "https://github.com/Pradeep1705/TicketsZippy",
       features: [
         "Movie ticket booking system",
         "Theatre management",
@@ -102,7 +98,7 @@ const Projects: React.FC = () => {
             >
               <div className="project-header">
                 <div className="project-meta">
-                  <span className="project-date">{project.date}</span>
+                  {/* <span className="project-date">{project.date}</span> */}
                   <span className="project-category">{project.category.toUpperCase()}</span>
                 </div>
                 {project.githubLink && (

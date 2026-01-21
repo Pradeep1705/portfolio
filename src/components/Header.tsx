@@ -40,12 +40,12 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="header-actions">
-            <a 
-              href="mailto:pradeepanravi01@gmail.com" 
+            <button 
+              onClick={() => scrollToSection('contact')} 
               className="btn-primary contact-btn"
             >
               Contact Me
-            </a>
+            </button>
           </div>
         </div>
       </div>
